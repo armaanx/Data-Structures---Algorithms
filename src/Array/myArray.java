@@ -40,6 +40,15 @@ public class myArray {
         }
         currentIndex--;
         this.items[currentIndex] = 0;
+    }
 
+    public int max() {
+        int result = this.items[0];
+        for (int i = 0; i <= this.currentIndex; i++) {
+            if (items[i] > result) {
+                result = items[i];
+            }
+        }
+        return result;
     }
 }
